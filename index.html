@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration Form</title>
+  <style>
+    /* Page background */
+    body {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* The white box */
+    .form-box {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      width: 320px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Labels */
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    /* Input fields */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    /* Hover effect on inputs */
+    input[type="text"]:hover,
+    input[type="email"]:hover,
+    input[type="password"]:hover,
+    select:hover {
+      border-color: green;
+    }
+
+    /* Gender and hobbies rows */
+    .radio-group,
+    .checkbox-group {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    /* Submit button */
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-box">
+    <h2>Student Registration Form</h2>
+
+    <label>Name:</label>
+    <input type="text" placeholder="Enter your name">
+
+    <label>Email:</label>
+    <input type="email" placeholder="Enter your email">
+
+    <label>Password:</label>
+    <input type="password" placeholder="Enter password">
+
+    <label>City:</label>
+    <select>
+      <option>Islamabad</option>
+      <option>Lahore</option>
+      <option>Karachi</option>
+    </select>
+
+    <label>Gender:</label>
+    <div class="radio-group">
+      <label><input type="radio" name="gender"> Male</label>
+      <label><input type="radio" name="gender"> Female</label>
+    </div>
+
+    <label>Hobbies:</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Reading</label>
+      <label><input type="checkbox"> Sports</label>
+      <label><input type="checkbox"> Music</label>
+    </div>
+
+    <button>Submit</button>
+  </div>
+
+</body>
+</html>
